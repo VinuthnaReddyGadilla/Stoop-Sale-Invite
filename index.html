@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-------------------------------Linking the CSS file---------------------------------------->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-------------------------------Adding the font---------------------------------------------->     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <!-------------------------------------javascript------------------------------------------>
+    <script>
+        function copyInviteDetails() {
+            const inviteDetails = `Do you believe in sustainability? Love thrifting? we are hosting a stoop sale!!!
+            When & Where:
+            Location: 2nd Pl. and Court St
+            Date & Time: July 14, Sunday
+            10 A.M. to 3 P.M.
+            Summer of 2024
+            Check out the details here: https://vinuthnareddygadilla.github.io/Stoop-Sale-Invite/`;
+
+            navigator.clipboard.writeText(inviteDetails).then(function() {
+                alert('Invite details copied to clipboard!');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="main-page">
+        <div class="container">
+            <div class="row">
+                <div class="column-left">
+                    <img src="./images/lemon1.png">
+                </div>
+                <div class="column-right">
+                    <h1>" Someone's Inessential = Someone's Treasure "</h1>
+                    <p>Do you believe in sustainability? Love thrifting?<br>If your answer is yes, This invitation is made for you.<br>To make your summer better, we are hosting a stoop sale where you can expect clothes, accesesories, shoes, bags, home goods and many more.</p>
+                    <a href="#info-page">When & Where</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------Address and Time---------------------------------------------------->
+    <div id="info-page">
+        <div class="container">
+            <div class="row">
+            <div class="information">
+                <div class="row">
+                    <div class="address">
+                        <h2>Location</h2>
+                        <p>2nd Pl. and Court St</p>
+                        <a href="./map.html">Load Map</a> 
+                    </div>
+                    <div class="date-time">
+                        <h2>Date & Time</h2>
+                        <p>July 14, Sunday<br>10 A.M. to 3 P.M.<br>Summer of 2024</p>
+                    </div>
+                </div>
+                <div class="sharability">
+                    <p>Isn't it fun to shop with your friend?? Then what are you waiting for,</p>  
+                    <a href="#" onclick="copyInviteDetails()"> share the invite</a>  
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
