@@ -88,8 +88,7 @@
     align-items: center;
     text-align: center;
     position: relative;
-    background: url('./images/background1.png') no-repeat center center/cover; 
-    /* Background image */
+    background: url('./images/background1.png') no-repeat center center/cover;
 }
 
 #info-page .container {
