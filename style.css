@@ -1,0 +1,152 @@
+*{
+    background-color: #C3FF93;
+   
+}
+#main-page {
+    color: #186F65;
+    font-family: "Fredoka", sans-serif;
+    height: 100vh; /* Ensure it takes the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-page .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Take the full width of the parent */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the element's total width and height */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    max-width: 1200px; /* Optional: Set a max width for better control over content width */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-left {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-right {
+    flex: 0 0 58%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-left img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column-right h1 {
+    font-size: 33px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center; /* Center align text */
+}
+
+.column-right p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center; /* Center align text */
+}
+
+.column-right a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FCDC2A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the button */
+    font-weight: 600;
+}
+
+.column-right a:hover {
+    background-color: #FCDC2A;
+}
+/*------------------information---------------------*/
+#info-page {
+    color: #186F65;
+    font-family: "Fredoka", sans-serif;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    background: url('./background1.png') no-repeat center center/cover; /* Background image */
+}
+
+#info-page .container {
+    position: relative;
+    z-index: 1; /* Ensure text is above the background image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 180px;
+}
+
+.information h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.information p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center; /* Center align text */
+
+}
+
+.information .sharability a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FCDC2A;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the button */
+    font-weight: 600;
+}
+.information .sharability p{
+    padding-bottom: 10px;
+}
+
+   
+.address a{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #186F65;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; /* Center align text */
+    margin: 0 auto; /* Center the button */
+    font-weight: 600;
+    
+}
+
+#map {
+    height: vh; /* Set height to 100% */
+    width: 100%;
+}
+
+
